@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phonely — ¿Qué móvil comprar? Test en 1 minuto</title>
+<meta name="description" content="Responde 6 preguntas y descubre los 3 móviles que mejor encajan contigo, nuevos o reacondicionados.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0B0D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='3' width='14' height='26' rx='4' fill='%23E3C27A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">PHONE<b>LY</b></div>
+  <div class="right">
+    <div class="pill" id="pill" data-t="pill"></div>
+    <div class="lang" id="lang">
+      <button type="button" aria-haspopup="listbox" aria-expanded="false" id="langBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+        <span id="langCode">ES</span>
+      </button>
+      <ul role="listbox" id="langList"></ul>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" id="hero">
+    <div>
+      <div class="eyebrow" data-t="eyebrow"></div>
+      <h1><span data-t="h1a"></span><b data-t="h1b"></b></h1>
+      <p data-t="lede"></p>
+      <div class="stats"><div><b class="n">98</b><span data-t="stat1"></span></div><div><b>3</b><span data-t="stat2"></span></div><div><b>60 s</b><span data-t="stat3"></span></div></div>
+      <button class="go" id="start"><span data-t="start"></span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <form class="finder" id="findForm" autocomplete="off">
+        <label for="find" data-t="findLabel"></label>
+        <div class="finder-row"><input id="find" list="models" data-tp="findPh"><button type="submit" data-t="findGo"></button></div>
+        <datalist id="models"></datalist>
+        <p class="find-msg" id="findMsg" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="stage"><div class="device" id="heroDevice"></div><div class="floor"></div></div>
+  </section>
+  <section class="quiz" id="quiz" aria-live="polite">
+    <div class="line"><i id="prog"></i></div>
+    <div id="qbody"></div>
+  </section>
+  <section class="results" id="results" aria-live="polite"></section>
+  <section class="results" id="model" aria-live="polite"></section>
+</main>
+<footer><p data-t="footer"></p><p id="amazonNote" data-t="amazonNote" hidden></p><a href="legal.html" data-t="legalLink"></a></footer>
+<script src="js/i18n.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/art.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
